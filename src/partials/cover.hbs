@@ -1,12 +1,23 @@
 <aside role="banner" class="cover">
-  <div {{#if @blog.cover}}data-load-image="{{@blog.cover}}"{{/if}} class="cover-image"></div>
+  <div {{#if @blog.cover_image}}data-load-image="{{@blog.cover_image}}" {{/if}} class="cover-image"></div>
   <div class="cover-container">
     {{#if @blog.logo}}
-      <a href="{{@blog.url}}" class="cover-logo" data-pjax>
-        <img src="{{@blog.logo}}" alt="Blog Logo">
-      </a>
-    {{/if}}
+    <a href="{{@blog.url}}" class="cover-logo" data-pjax>
+      <img src="{{@blog.logo}}" alt="Blog Logo">
+    </a> {{/if}}
     <h1 class="cover-title">{{@blog.title}}</h1>
     <p class="cover-description">{{@blog.description}}</p>
+    <a href="mailto:jptran318@gmail.com" class="cover-icon" target="_blank">
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    </a>
+    <a href="https://github.com/jooohhn" class="cover-icon" target="_blank">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/john-tran-948486109/" class="cover-icon" target="_blank">
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </a>
+    <a href="https://twitter.com/jooohhnt" class="cover-icon" target="_blank">
+      <i class="fa fa-twitter"></i>
+    </a>
   </div>
 </aside>
