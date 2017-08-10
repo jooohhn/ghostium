@@ -6,7 +6,15 @@
       <img src="{{@blog.logo}}" alt="Blog Logo">
     </a> {{/if}}
     <h1 class="cover-title">{{@blog.title}}</h1>
-    <p class="cover-description">{{@blog.description}}</p>
+    {{#if @blog.description}}
+      <p class="cover-description">{{@blog.description}}</p>
+    {{/if}}
+    <div class="cover-navigation-links">
+      <a href="/" data-pjax>Home</a>
+      <a href="/projects" data-pjax>Projects</a>
+      <a href="/about" data-pjax>About</a>
+    </div>
+    <div>
     <a href="mailto:jptran318@gmail.com" class="cover-icon" target="_blank">
       <span class="fa-stack">
         <i class="fa fa-square-o fa-stack-2x"></i>
